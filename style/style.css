@@ -11,7 +11,13 @@
     --pastel-blue: hsl(228, 100%, 84%);
     --light-blue: hsl(206, 94%, 87%);
     --strawberry-red: hsl(354, 84%, 57%);
-    --font: url(assets/fonts/Ubuntu-Bold.ttf)
+
+    --cool-gray: hsl(231, 11%, 63%);
+    --light-gray: hsl(229, 24%, 87%);
+    --magnolia: hsl(217, 100%, 97%);
+    --alabaster: hsl(231, 100%, 99%);
+    --white: hsl(0, 0%, 100%);
+
 }
 
 body {
@@ -23,7 +29,7 @@ body {
     background-color: white;
     display: flex;
     flex-direction: row;
-    margin: 15% 25%;
+    margin: 3% 25%;
     padding: 1%;
     border-radius: 10px;
 }
@@ -33,29 +39,44 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 10% 50px;
+    padding: 10% 18% 20% 8% ;
     border-radius: 10px;
     font-family:'Ubuntu', sans-serif;
     display: grid;
-    grid-template-columns: auto 100px;
-    gap: 20px;
-    justify-content:first baseline;
+    grid-template-columns: auto 125px;
+    gap: 10px;
+    align-items:flex-start;
+    justify-content: flex-start;
 }
 
 .numbers {
     box-sizing: border-box;
-    border: 2px solid white;
+    border: 1px solid white;
     text-align: center;
     border-radius: 100%;
-    padding: 15px 20px;
-    
+    padding: 10px 15px; 
+    color: white;
+}
+
+.numbers:hover {
+    background-color: var(--pastel-blue);
+    cursor: pointer;
+    color: black;
 }
 
 .respective {
     display: flex;
     flex-direction: column;
-    
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
 }
+
+.steps {
+    color: var(--cool-gray);
+}
+
 
 .form {
     padding-left: 10%;
