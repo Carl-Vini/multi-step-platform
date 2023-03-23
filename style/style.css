@@ -23,15 +23,20 @@
 body {
     box-sizing: border-box;
     background-color: var(--light-blue);
+    font-family:'Ubuntu', sans-serif;
 }
 
 .container {
     background-color: white;
-    display: flex;
-    flex-direction: row;
-    margin: 3% 25%;
-    padding: 1%;
+    display: grid;
+    grid-template-columns: 40% auto;
+    gap: 20px;
+    margin-left: 15%;
+    margin-top: 2%;
+    margin-bottom: 1%;
     border-radius: 10px;
+    box-sizing: border-box;
+    width: 70%;
 }
 
 .sidebar {
@@ -39,14 +44,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 10% 18% 20% 8% ;
+    padding: 10% 10% 75% 8% ;
     border-radius: 10px;
-    font-family:'Ubuntu', sans-serif;
     display: grid;
     grid-template-columns: auto 125px;
-    gap: 10px;
+    gap: 16px;
     align-items:flex-start;
     justify-content: flex-start;
+    margin: 4%;
 }
 
 .numbers {
@@ -79,5 +84,53 @@ body {
 
 
 .form {
-    padding-left: 10%;
+    margin-left: 10%;
+} 
+
+.step-1 {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    height: 80%;
+}
+
+.form-step:not(:first-of-type) {
+    display: none;
+}
+
+.title {
+    color: var(--marine-blue);
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 45px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: var(--cool-gray);
+    
+}
+
+input { 
+    width: 80%;
+    border-radius: 8px;
+    padding: 3% 5%;
+    margin-top: 8px;
+    font-family:'Ubuntu', sans-serif;
+    border: 1px solid var(--cool-gray);
+
+}
+
+label {
+    color: var(--marine-blue);
+}
+
+.btn-next-step {
+    position: relative;
+    left: 70.5%;
+    padding: 2% 4%;
+    top: 10%;
+    color: var(--white);
+    background-color: var(--marine-blue);
+    border-radius: 5px; 
 }
