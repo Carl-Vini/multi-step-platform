@@ -23,7 +23,7 @@
 body {
     box-sizing: border-box;
     background-color: var(--light-blue);
-    font-family:'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .container {
@@ -44,12 +44,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 10% 10% 75% 8% ;
+    padding: 10% 10% 75% 8%;
     border-radius: 10px;
     display: grid;
     grid-template-columns: auto 125px;
     gap: 16px;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: flex-start;
     margin: 4%;
 }
@@ -59,7 +59,7 @@ body {
     border: 1px solid white;
     text-align: center;
     border-radius: 100%;
-    padding: 10px 15px; 
+    padding: 10px 15px;
     color: white;
 }
 
@@ -85,18 +85,35 @@ body {
 
 .form {
     margin-left: 10%;
-} 
+}
 
-.step-1 {
-    display: block;
+.form-step {
     position: absolute;
     bottom: 10%;
     height: 80%;
 }
 
-.form-step:not(:first-of-type) {
+.step-1 {
+    display: block;
+
+}
+
+
+.step-3 {
     display: none;
 }
+
+.step-4 {
+    display: none;
+}
+
+.step-5 {
+    display: none;
+}
+
+/* .form-step:not(:first-of-type) {
+    display: none; 
+} */
 
 .title {
     color: var(--marine-blue);
@@ -108,15 +125,15 @@ body {
 
 .subtitle {
     color: var(--cool-gray);
-    
+
 }
 
-input { 
+input {
     width: 80%;
     border-radius: 8px;
     padding: 3% 5%;
     margin-top: 8px;
-    font-family:'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     border: 1px solid var(--cool-gray);
 
 }
@@ -127,10 +144,66 @@ label {
 
 .btn-next-step {
     position: relative;
-    left: 70.5%;
     padding: 2% 4%;
-    top: 10%;
     color: var(--white);
     background-color: var(--marine-blue);
-    border-radius: 5px; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-next-1 {
+    position: relative;
+    margin-top: 10%;
+    left: 80%;
+    
+}
+
+
+.step-2 {
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    height: 80%;
+    background-color: var(--light-gray);
+    width: 35%;
+}
+
+.container-cards {
+    display: flex;
+    gap: 12px;
+}
+
+.card {
+    box-sizing: border-box;
+    border: 1px solid var(--pastel-blue);
+    border-radius: 5px;
+    width: 30%;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: var(--purplish-blue);
+}
+
+
+.card-item {
+    color: var(--marine-blue);
+}
+
+.back-next {
+    padding-top: 19%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1%;
+}
+
+.btn-go-back {
+    padding: 2% 4%;
+    color: var(--white);
+    background-color: var(--marine-blue);
+    border-radius: 5px;
+    cursor: pointer;
 }

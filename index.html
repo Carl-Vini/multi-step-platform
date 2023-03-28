@@ -73,7 +73,7 @@
         <label for="tel">Phone Number</label><br>
         <input type="tel" placeholder="e.g. +1 234 567 890"><br><br>
 
-        <button class="btn-next-step">Next Step</button>
+        <button class="btn-next-step btn-next-1">Next Step</button>
       </section>
 
 
@@ -81,23 +81,38 @@
 
       <!-- Step 2 start -->
       <section class="form-step step-2">
-        Select your plan
-        You have the option of monthly or yearly billing.
+        <h1 class="title">Select your plan</h1>
+        <p class="subtitle">You have the option of monthly or yearly billing.</p>
+        <br><br>
 
-        Arcade
-        $9/mo
 
-        Advanced
-        $12/mo
+        <div class="container-cards">
+          <section class="card">
+            <img src="/assets/images/icon-arcade.svg" alt="image of the arcade" class="arcade"><br><br><br>
+            <h3 class="card-item">Arcade</h3>
+            <p class="card-value">$9/mo</p>
+          </section>
 
-        Pro
-        $15/mo
+          <section class="card">
+            <img src="/assets/images/icon-advanced.svg" alt="image of the advanced"><br><br><br>
+            <h3 class="card-item">Advanced</h3>
+            <p class="card-value">$12/mo</p>
+          </section>
+
+          <section class="card">
+            <img src="/assets/images/icon-pro.svg" alt="image of the pro"><br><br><br>
+            <h3 class="card-item">Pro</h3>
+            <p class="card-value">$15/mo</p>
+          </section>
+        </div><br><br>
 
         Monthly
         Yearly
-
-        Go Back
-        <button class="btn-next-step">Next Step</button>
+        <br><br>
+        <div class="back-next">
+          <button class="btn-go-back">Go Back</button>
+          <button class="btn-next-step">Next Step</button> 
+        </div>
       </section>
       <!-- Step 2 end -->
 
@@ -118,7 +133,7 @@
         Custom theme on your profile
         +$2/mo
 
-        Go Back
+        <button class="btn-go-back">Go Back</button>
         <button class="btn-next-step">Next Step</button>
       </section>
       <!-- Step 3 end -->
@@ -132,8 +147,8 @@
 
         Total (per month/year)
 
-        Go Back
-        Confirm
+        <button class="btn-go-back">Go Back</button>
+        <button class="btn-confirm">Confirm</button>
       </section>
       <!-- Step 4 end -->
 
@@ -156,7 +171,7 @@
     </div>
   </footer>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
