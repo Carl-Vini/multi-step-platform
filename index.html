@@ -67,7 +67,7 @@
         <p class="subtitle">Please provide your name, email address, and phone number.</p>
         <br><br>
         <label for="name">Name</label><br>
-        <input type="text" id="name" placeholder="e.g. Stephen King"><br><br>
+        <input type="text" id="name" placeholder="e.g. Stephen King" required><br><br>
         <label for="email">Email Address</label><br>
         <input type="email" placeholder="e.g. stephenking@lorem.com"><br><br>
         <label for="tel">Phone Number</label><br>
@@ -106,12 +106,21 @@
           </section>
         </div><br><br>
 
-        Monthly
-        Yearly
+        <div class="mon-year-container">
+          
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider-round"></span>
+            <span class="slider-label slider-label--right">Yearly</span>
+            <span class="slider-label slider-label--left"> Monthly</span>
+          </label>
+          
+        </div>
         <br><br>
         <div class="back-next">
           <button class="btn-go-back">Go Back</button>
-          <button class="btn-next-step">Next Step</button> 
+          <button class="btn-next-step">Next Step</button>
+
         </div>
       </section>
       <!-- Step 2 end -->

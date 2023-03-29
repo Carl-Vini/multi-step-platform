@@ -155,7 +155,7 @@ label {
     position: relative;
     margin-top: 10%;
     left: 80%;
-    
+
 }
 
 
@@ -164,7 +164,6 @@ label {
     position: absolute;
     bottom: 10%;
     height: 80%;
-    background-color: var(--light-gray);
     width: 35%;
 }
 
@@ -194,7 +193,7 @@ label {
 }
 
 .back-next {
-    padding-top: 19%;
+    padding-top: 15.2%;
     display: flex;
     justify-content: space-between;
     padding-right: 1%;
@@ -206,4 +205,88 @@ label {
     background-color: var(--marine-blue);
     border-radius: 5px;
     cursor: pointer;
+}
+
+.mon-year-container {
+    position: relative;
+    left: 39%;
+    
+}
+
+.switch {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    user-select: none;
+    background-color: var(--magnolia);
+}
+
+.slider-round {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    background-color: var(--marine-blue);
+    border-radius: 15px;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.slider-round::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider-label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: var(--cool-gray);
+    font-weight: 700;
+}
+
+.slider-label--left {
+    position: absolute;
+    top: 30%;
+    left: 75px;
+   
+}
+
+
+.slider-label--right {
+    position: absolute;
+    top: 30%;
+    right: 30px;
+    color: var(--marine-blue)
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+.slider-round {
+    background-color: var(--marine-blue);
+}
+
+input[type="checkbox"]:checked+.slider-round::before {
+    transform: translateX(20px);
+}
+
+.switch input:checked+.slider-label--left::before {
+    color: var(--marine-blue);
+}
+
+input[type="checkbox"]:not(:checked)+.slider-label--right {
+    color:var(--cool-gray)
 }
